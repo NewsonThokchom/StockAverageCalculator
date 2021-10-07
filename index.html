@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Average Calculator</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <h1>Stock Average Calculator</h1>
+
+    <div class="container">
+
+        <h2>First Buy</h2>
+
+        <div class="input-fields">
+            <label for="holdingQty"> Holding Quantity : </label>
+            <input type="number" min="1" id="holdingQty">
+        </div>
+
+        <div class="input-fields">
+            <label for="holdingAvgPrice"> Holding Average Price : </label>
+            <input type="number" min="1" id="holdingAvgPrice">
+        </div>
+
+        <h2>Second Buy</h2>
+
+        <div class="input-fields">
+            <label for="newQty"> New Quantity : </label>
+            <input type="number" min="1" id="newQty">
+        </div>
+
+        <div class="input-fields">
+            <label for="newMarketPrice"> New Market Price : </label>
+            <input type="number" min="1" id="newMarketPrice">
+        </div>
+
+        <div class="result-wrapper">
+            <p>Total Quantity : <span id="totalQty" class="result-text"> 0 qty</span></p>
+            <p>Average Price : <span id="averagePrice" class="result-text"> Rs. 0</span></p>
+            <p>Total Invested Amount : <span id="totalInvestedAmount" class="result-text"> Rs. 0 </span></p>
+        </div>
+
+        <div class="button-wrapper">
+            <button onclick="calculate()" id="calculateBtn">Calculate</button>
+            <button onclick="clearAll()" id="clearBtn">Clear</button>
+        </div>
+
+        <p class="footer-label">Created by - <a href="https://www.youtube.com/channel/UCNHYZw7yuIYuJbuHG6M3pow"> Lone
+                Coder</a></p>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
